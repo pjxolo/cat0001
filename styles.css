@@ -1,0 +1,38 @@
+.card-title {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.chart {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.site_id {
+    font-size: 0.75rem;
+    color: #222;
+    text-align: center;
+    align-items: center;
+}
+
+.brand {
+    width: 150px;
+    padding-bottom: 10px;
+    float: right;
+}
