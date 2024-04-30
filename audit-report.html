@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️🐈 GOVCAT: energy.gov/ceser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card-title {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 2.25rem;
+            padding-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.75rem;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .chart {
+          padding: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+          }
+
+          .site_id {
+            font-size: 0.75rem;
+            color: #222;
+            text-align: center;
+            align-items: center;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-4">
+              <img src="/doe.png" alt="DOE Logo" class="img-fluid" style="width:25%; padding-bottom: 25px;">
+                <h1>Content Audit: CESER </h1>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 py-4">
+            <h2>Top-Line Metrics</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">788</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Total Nodes</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">769k</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Pageviews since 1/1/23</small></h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">0</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Nodes to be Archived</h6>
+                    </div>
+                  </div>
+            </div>
+         </div>
+        <div class="row">
+            <div class="col-md-12 py-4">
+                <h2>Overview</h2>
+                <p class="lead">There are <strong>788</strong> nodes on energy.gov assigned to <a href="https://energy.gov/ceser">CESER</a>. Since January 2023, these nodes have received <strong>769,354</strong> pageviews.<p>
+                  <h3>Key Findings</h3>
+                  <ul>
+                    <li><strong>70%</strong> of all nodes are articles</li>
+                    <li><strong>20%</strong> of all nodes have not been updated this decade</li>
+                    <li><strong>70%</strong> of all pageviews since 1/1/2023 were on the top 25 pages</li>
+                    <li><strong>47%</strong> of all pageviews since 1/1/2023 were on SPR-related pages</li>
+                    <li><strong>61%</strong> of all site visits start on one of 10 landing pages</li>
+                  </ul>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-md-12">
+                <h2>Charts and tables</h2>
+                <h3>Node by Type</h3>
+                <div id="everviz-daTXlkAm4" class="chart everviz-daTXlkAm4"><script src="https://app.everviz.com/inject/daTXlkAm4/?v=1" defer="defer"></script></div>
+                <h3>Node by Year Last Updated</h3>
+                <div id="everviz-ULr7Wjo00" class="chart everviz-ULr7Wjo00"><script src="https://app.everviz.com/inject/ULr7Wjo00/?v=1" defer="defer"></script></div>
+                <h3>Top Nodes by Views</h3>
+                <div id="everviz-table-AShHzqNRS" class="chart"><script src="https://app.everviz.com/inject/AShHzqNRS/?v=1" defer="defer"></script></div>
+                <h3>Top SPR-related Nodes by Views</h3>
+                <div id="everviz-table-iMKEHd8jX" class="chart"><script src="https://app.everviz.com/inject/iMKEHd8jX/?v=1" defer="defer"></script></div>
+                <h3>Top Landing Pages</h3>
+                <div id="everviz-table-rYwnhmLb5" class="chart"><script src="https://app.everviz.com/inject/rYwnhmLb5/?v=1" defer="defer"></script></div>
+
+
+
+
+         </div>
+        </div>
+         <!--<div class="row">
+            <div class="col-md-12">
+                <script src="//cdn.amcharts.com/lib/4/core.js"></script>
+                <script src="//cdn.amcharts.com/lib/4/charts.js"></script>
+                
+                <div id="chartdiv" style="width: 100%; height: 400px;"></div>
+                
+                <script>
+                // Create chart instance
+                var chart = am4core.create("chartdiv", am4charts.PieChart);
+                
+                // Add data
+                chart.data = [{
+                  "type": "Article",
+                  "nodes": 554
+                }, {
+                  "type": "Page",
+                  "nodes": 166
+                }, {
+                  "type": "Listing  ",
+                  "nodes": 34
+                }, {
+                  "type": "Event",
+                  "nodes": 31
+                },
+                {
+                  "type": "Person",
+                  "nodes": 9
+                }, {
+                  "type": "Photo Gallery",
+                  "nodes": 2
+                }, {
+                  "type": "Pivot Table",
+                  "nodes": 2
+                }];
+                
+                // Add and configure Series
+                var pieSeries = chart.series.push(new am4charts.PieSeries());
+                pieSeries.dataFields.value = "nodes";
+                pieSeries.dataFields.category = "type";
+                </script>
+            </div>
+         </div>-->
+         
+    </div>
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-md-12">
+          <p class="site_id">Produced by ICF-Next DOE Digital with gov-cat 🐈</p>
+        </div>
+       </div>
+    </div>
+</body>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
